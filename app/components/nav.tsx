@@ -22,9 +22,9 @@ const navItems: { [key: string]: NavItem } = {
 
 export function Navbar() {
 	return (
-		<header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 pt-5 w-1/2 min-w-[400px]">
+		<header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 pt-5 w-1/2 min-w-[300px] max-w-[576px]">
 			<nav
-				className="backdrop-blur-md bg-white/10 rounded-2xl shadow-lg px-6 py-2"
+				className="backdrop-blur-md bg-white/10 rounded-xl shadow-lg px-6 py-2"
 				id="nav"
 				aria-label="Main navigation"
 			>
