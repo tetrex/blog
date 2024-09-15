@@ -1,5 +1,5 @@
 import { BlogPosts } from "app/components/posts";
-
+import { Projects } from "./components/projects";
 export default function Page() {
 	return (
 		<section>
@@ -13,7 +13,15 @@ export default function Page() {
         early error detection ensures cleaner code, and my preference for dark
         mode, which eases long coding sessions by reducing eye strain.`}
 			</p>
-			<hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700"></hr>
+			<hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+			<h1 className="mb-2 text-2xl font-semibold tracking-tighter">
+				My Projects
+			</h1>
+			<div className="my-8">
+				<Projects />
+			</div>
+			<hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
+			<h1 className="mb-8 text-2xl font-semibold tracking-tighter">My Blogs</h1>
 			<div className="my-8">
 				<BlogPosts />
 			</div>
