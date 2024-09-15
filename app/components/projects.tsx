@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { formatDate, getProjects } from "app/blog/utils";
-import { HiExternalLink } from "react-icons/hi";
+import { ArrowIcon } from "./footer";
 
 export function Projects() {
 	let allBlogs = getProjects();
@@ -32,9 +32,10 @@ export function Projects() {
 								</p>
 							</div>
 						</Link>
+
 						<Link
 							key={post.slug}
-							className="flex flex-col space-y-1 mb-4"
+							className="flex flex-row space-y-1 mb-4 justify-center items-center hover:text-blue-500 hover:underline"
 							target="_blank"
 							href={
 								post.metadata.projectGithubLink
@@ -42,7 +43,8 @@ export function Projects() {
 									: "https://github.com/tetrex"
 							}
 						>
-							<HiExternalLink />
+							<ArrowIcon />
+							<p className="ml-2 h-7">view source</p>
 						</Link>
 					</div>
 				))}

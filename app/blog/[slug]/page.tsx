@@ -3,7 +3,7 @@ import { CustomMDX } from "app/components/mdx";
 import { formatDate, getBlogPosts } from "app/blog/utils";
 import { baseUrl } from "app/sitemap";
 import Link from "next/link";
-import { HiExternalLink } from "react-icons/hi";
+import { ArrowIcon } from "app/components/footer";
 
 export async function generateStaticParams() {
 	let posts = getBlogPosts();
@@ -90,7 +90,8 @@ export default function Blog({ params }) {
 				</h1>
 				<Link
 					key={post.slug}
-					className="flex flex-col space-y-1 mb-4"
+					className="flex items-center transition-all hover:text-blue-500 hover:underline"
+					rel="noopener noreferrer"
 					target="_blank"
 					href={
 						post.metadata.projectGithubLink
@@ -98,7 +99,8 @@ export default function Blog({ params }) {
 							: "https://github.com/tetrex"
 					}
 				>
-					<HiExternalLink className="m-2" />
+					<ArrowIcon />
+					<p className="ml-2 h-7">view source</p>
 				</Link>
 			</div>
 			<div className="flex justify-between items-center mt-2 mb-8 text-sm">
