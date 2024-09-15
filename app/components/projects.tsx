@@ -19,7 +19,7 @@ export function Projects() {
 				.map((post) => (
 					<div className="flex flex-row justify-between pr-2">
 						<Link
-							key={post.slug}
+							key={`project-${post.slug}`}
 							className="flex flex-col space-y-1 mb-4"
 							href={`/blog/${post.slug}`}
 						>
@@ -34,7 +34,7 @@ export function Projects() {
 						</Link>
 
 						<Link
-							key={post.slug}
+							key={`project-link-${post.slug}`}
 							className="flex flex-row space-y-1 mb-4 justify-center items-center hover:text-blue-500 hover:underline"
 							target="_blank"
 							href={

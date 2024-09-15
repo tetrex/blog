@@ -22,7 +22,7 @@ const navItems: { [key: string]: NavItem } = {
 
 export function Navbar() {
 	return (
-		<header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 pt-5 w-1/2 min-w-[300px] max-w-[576px]">
+		<header className="fixed top-0 left-1/2 transform -translate-x-1/2 z-50 pt-5 w-1/2 min-w-[300px] max-w-[576px] md:w-full md:-translate-x-1/2 ">
 			<nav
 				className="backdrop-blur-md bg-white/10 rounded-xl shadow-lg px-6 py-2"
 				id="nav"
