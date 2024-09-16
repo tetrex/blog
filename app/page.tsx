@@ -7,11 +7,11 @@ export default function Page() {
 				My Portfolio
 			</h1>
 			<p className="mb-4">
-				{`I'm a Vim enthusiast and tab advocate, finding unmatched efficiency in
-        Vim's keystroke commands and tabs' flexibility for personal viewing
-        preferences. This extends to my support for static typing, where its
-        early error detection ensures cleaner code, and my preference for dark
-        mode, which eases long coding sessions by reducing eye strain.`}
+				I’m Harsh Rawat, a Golang and Node.js enthusiast with a strong
+				background in NoSQL and SQL databases. I’m passionate about distributed
+				computing and parallel processing, and my experience spans blockchain,
+				REST, WebSocket, and microservices. I thrive on exploring diverse
+				technologies and tackling complex challenges.
 			</p>
 			<hr className="h-px my-8 bg-gray-200 border-0 dark:bg-gray-700" />
 			<h1 className="mb-2 text-2xl font-semibold tracking-tighter">
